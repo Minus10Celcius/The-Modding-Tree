@@ -32,7 +32,9 @@ addLayer("The First Difficulty", {
             title: "Make this whatever you want!",
             description: "Double your point gain.",
             cost: new Decimal(1),
-            if (hasUpgrade('The First Difficulty', 11)) gain = gain.times(2)
+            if (('The First Difficulty', 11)) gain = gain.times(2)
         },
+s
     },
+
 })
