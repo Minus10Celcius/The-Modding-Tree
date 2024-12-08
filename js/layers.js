@@ -27,14 +27,8 @@ addLayer("The First Difficulty", {
     layerShown(){return true},
 
     upgrades: {
-
         11: {
-            title: "Make this whatever you want!",
-            description: "Double your point gain.",
-            cost: new Decimal(1),
-            if (('The First Difficulty', 11)) gain = gain.times(2)
-        },
-s
-    },
 
+        },
+    },
 })
