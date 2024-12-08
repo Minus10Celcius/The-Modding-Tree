@@ -27,11 +27,3 @@ addLayer("The First Difficulty", {
     layerShown(){return true}
 })
 
-upgrades: {
-    11: {
-        title: "The First Upgrade",
-        description: "Add 0.1 to your point gain.",
-        cost: new Decimal(0.5),
-        if (hasUpgrade('p', 11)) gain = gain.add(0.1)
-    },
-},
