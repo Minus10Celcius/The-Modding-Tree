@@ -16,6 +16,7 @@ addLayer("The First Difficulty", {
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
         return mult
+        if (hasUpgrade('p', 11)) gain = gain.times(2)
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
         return new Decimal(1)
@@ -31,6 +32,8 @@ addLayer("The First Difficulty", {
             title: "Make this whatever you want!",
             description: "Double your point gain.",
             cost: new Decimal(1),
+            
         },
     },
 })
+
