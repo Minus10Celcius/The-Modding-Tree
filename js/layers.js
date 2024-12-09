@@ -31,14 +31,12 @@ addLayer("d", {
             title: "Make this whatever you want!",
             description: "Double your point gain.",
             cost: new Decimal(1),
-            if (hasUpgrade('d', 11)) gain = gain.times(2)
-        }
+        },
 
         12: {
             title: "test",
             description: "test",
             cost: new Decimal(2),
-            if (hasUpgrade('d', 12)) gain = gain.times(3)
         }
     },
  
