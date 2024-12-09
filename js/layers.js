@@ -42,7 +42,7 @@ addLayer("d", {
             description: "Double your point gain.",
             cost: new Decimal(1),
             effect() {
-                return hasUpgrade(this.layer, this.id) ? 2 : 1;
+                if (hasUpgrade('p', 11)) gain = gain.times(2)
             },
         },
     
