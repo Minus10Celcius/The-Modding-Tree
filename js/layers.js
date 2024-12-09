@@ -9,7 +9,7 @@ addLayer("p", {
         }
     },
     color: "#FFFFFF",
-    requires: new Decimal(10), // Can be a function that takes requirement increases into account
+    requires: new Decimal(1), // Can be a function that takes requirement increases into account
     resource: "prestige points", // Name of prestige currency
     baseResource: "points", // Name of resource prestige is based on
     baseAmount() {
@@ -22,7 +22,7 @@ addLayer("p", {
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
-        return new Decimal(1)
+        return new Decimal(0.1)
     },
     row: 0, // Row the layer is in on the tree (0 is the first row)
     hotkeys: [{
