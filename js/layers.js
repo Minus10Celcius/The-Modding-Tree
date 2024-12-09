@@ -37,26 +37,20 @@ addLayer("d", {
     },
 
     upgrades: {
-        upgrades: {
-            11: {
-                title: "Make this whatever you want!",
-                description: "Double your point gain.",
-                cost: new Decimal(1),
-                effect() {
-                    if (hasUpgrade('p', 11)) {
-                        return 2;
-                    }
-                    return 1;
-                },
-                effectDisplay() { return "×" + this.effect() }
+        11: {
+            title: "Make this whatever you want!",
+            description: "Double your point gain.",
+            cost: new Decimal(1),
+            effect() {
+                return hasUpgrade(this.layer, this.id) ? 2 : 1;
             },
-        
-            12: {
-                title: "test",
-                description: "test",
-                cost: new Decimal(2),
-            }
         },
+    
+        12: {
+            title: "test",
+            description: "test",
+            cost: new Decimal(2),
+        }
     },
 
 })
